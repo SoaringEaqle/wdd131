@@ -1,0 +1,71 @@
+header, footer{
+    width: 100%;
+    text-align: center;
+    background-color: #009dff;
+    color: white;
+    padding: 10px 0;
+}
+.navi{
+
+    color: white;
+    border: none;
+    background-color: transparent;
+
+}
+#nav{
+    display: none;
+}
+#nav a{
+    color: white;
+    width: 50px;
+    text-align: center;
+    margin: 0 50px;
+}
+main{
+    background-color: darkgrey;
+    padding: 10px 0 ;
+}
+
+h2{
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+#gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row-gap: 50px;
+    grid-column-gap: 100px;
+    justify-self: center;
+    padding: 20px;
+}
+
+img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border: 3px solid white;
+    box-shadow: 3px 3px 5px black;
+}
+
+@media screen and (min-width: 700px){
+    #gallery{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    #gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #menu-btn{
+        display: none;
+    }
+    #nav{
+        display: block;
+
+    }
+}
+
+
