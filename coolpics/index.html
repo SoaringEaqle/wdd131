@@ -4,10 +4,15 @@
 	<meta charset="UTF-8">
 	<title>Title</title>
 	<link rel="stylesheet" href="coolpics.css">
+	<script src="coolpics.js" defer></script>
 </head>
 <body>
 	<header>
 		<h1>Cool Pics 📷</h1>
+
+		<button id="menu-btn" class="navi">
+			Menu
+		</button>
 		<nav id="nav" class="navi">
 			<a href="#">Home</a>
 			<a href="#">People</a>
@@ -15,9 +20,6 @@
 			<a href="#">About</a>
 			<a href="#">Contact</a>
 		</nav>
-		<button id="menu-btn" class="navi">
-			Menu
-		</button>
 	</header>
 	<main>
 		<h2>Current Work</h2>
@@ -33,6 +35,11 @@
 			<img src="springpic.jpg" alt="Hot Springs Image">
 		</div>
 	</main>
+
+	<dialog id="modal">
+		<img>
+		<button class="close-viewer">X</button>
+	</dialog>
 	<footer>&copy; 2025 </footer>
 </body>
 </html>
