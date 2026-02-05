@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<h1>Student List</h1>
+<div id="student-container"></div>
+	<script>
+		const student = [
+			{
+				last: 'Smith',
+				first: 'John'
+			},
+			{
+				last: 'Doe',
+				first: 'Jane'
+			}
+		]
+
+		let studentContainer = document.getElementById("student-container");
+
+		student.forEach(function(student) {
+			let name = document.createElement("div");
+			name.setAttribute("class", "format");
+
+			let html = `<p class="details">${student.first}</p>
+						<p class="details">${student.last}</p>
+						<hr>`;
+		name.innerHTML = html;
+			studentContainer.appendChild(name);
+		});
+	</script>
+</body>
+</html>
