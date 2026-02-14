@@ -28,6 +28,7 @@ h4{
 .review{
     display: grid;
     grid-template-rows: auto 1fr;
+    margin-bottom: 50px;
 }
 .col_info{
     text-align: right;
